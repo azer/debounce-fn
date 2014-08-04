@@ -1,0 +1,22 @@
+{
+  "name": "debounce-fn",
+  "version": "0.0.0",
+  "description": "Return a debounced version of the given function",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "debounce",
+    "debounced"
+  ],
+  "repository": {
+    "url": "git@github.com:azer/debounce-fn.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD",
+  "devDependencies": {
+    "prova": "^1.14.0"
+  }
+}
