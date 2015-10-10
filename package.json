@@ -1,6 +1,6 @@
 {
   "name": "debounce-fn",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Return a debounced version of the given function",
   "main": "index.js",
   "scripts": {
