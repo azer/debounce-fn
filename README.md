@@ -12,7 +12,7 @@ $ npm install debounce-fn
 
 ```js
 var debounce = require('debounce-fn')
-var yo = debounce(printYo, 300) // debounce for 300ms. default is 250ms.
+var yo = debounce(printYo, 300) // debounce for 300ms. if second argument is not passed, default is 250ms.
 
 yo()
 yo()
