@@ -17,6 +17,6 @@
   "author": "azer",
   "license": "BSD",
   "devDependencies": {
-    "prova": "^1.14.0"
+    "prova": "azer/prova"
   }
 }

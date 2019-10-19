@@ -1,23 +1,29 @@
-module.exports = debounce;
+module.exports = debounce
 
-function debounce (fn, wait) {
-  var timer;
-  var args;
+function debounce(fn, wait) {
+  var timer
+  var args
 
   if (arguments.length == 1) {
-    wait = 250;
+    wait = 250
   }
 
-  return function () {
+  return function() {
     if (timer != undefined) {
-      clearTimeout(timer);
-      timer = undefined;
+      clearTimeout(timer)
+      timer = undefined
+    } else {
+      timer = setTimeout(noop)
+      fn.apply(undefined, arguments)
+      return
     }
 
-    args = arguments;
+    args = arguments
 
-    timer = setTimeout(function () {
-      fn.apply(undefined, args);
-    }, wait);
-  };
+    timer = setTimeout(function() {
+      fn.apply(undefined, args)
+    }, wait)
+  }
 }
+
+function noop() {}
